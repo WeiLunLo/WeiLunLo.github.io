@@ -7,16 +7,12 @@ nav: true
 nav_order: 2
 ---
 
-Working Papers
+## Working Papers
 
-<!-- _pages/publications.md -->
-
-<!-- Bibsearch Feature -->
-
-<!--{% include bib_search.liquid %}-->
+<!-- Page: _pages/publications.md -->
+<!-- Bibsearch Feature (disabled) -->
+<!-- {% include bib_search.liquid %} -->
 
 <div class="publications">
-
-{% bibliography %} 
-
+  {% bibliography %}
 </div>
