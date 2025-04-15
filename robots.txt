@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://WeiLunLo.github.io/sitemap.xml
+Sitemap: https://weilunlo.github.io/sitemap.xml
