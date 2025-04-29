@@ -462,13 +462,6 @@ ninja.data = [{
           window.open("mailto:%77%6C%6F%35@%75%72.%72%6F%63%68%65%73%74%65%72.%65%64%75", "_blank");
         },
       },{
-        id: 'social-rss',
-        title: 'RSS Feed',
-        section: 'Socials',
-        handler: () => {
-          window.open("/feed.xml", "_blank");
-        },
-      },{
         id: 'social-scholar',
         title: 'Google Scholar',
         section: 'Socials',
