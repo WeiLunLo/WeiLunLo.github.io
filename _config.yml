@@ -7,7 +7,7 @@ first_name: Wei-Lun
 middle_name: ""
 last_name: Lo
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  Chances are, I’m either sipping black tea or heading out to find some.
 # the ">" symbol means to ignore newlines until "footer_text:"
 description: >
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
