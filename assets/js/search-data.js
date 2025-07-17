@@ -23,13 +23,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-teaching",
-          title: "Teaching",
-          description: "Materials for courses I taught.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/teaching/";
-          },
         },{id: "post-a-post-with-plotly-js",
         
           title: "a post with plotly.js",
@@ -459,7 +452,7 @@ ninja.data = [{
         title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%77%6C%6F%35@%75%72.%72%6F%63%68%65%73%74%65%72.%65%64%75", "_blank");
+          window.open("mailto:%77%65%69%6C%6F@%69%75.%65%64%75", "_blank");
         },
       },{
         id: 'social-scholar',
