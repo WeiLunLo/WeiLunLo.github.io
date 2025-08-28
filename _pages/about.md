@@ -14,7 +14,7 @@ profile:
   #   <p>123 your address street</p>
   #   <p>NYC, State 12345</p>
 
-selected_papers: false # includes a list of papers marked as "selected={true}"
+selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
@@ -28,7 +28,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am an incoming PhD student in Public Affairs at the O’Neill School of Public and Environmental Affairs, Indiana University.
+I am an PhD student in Public Affairs at the O’Neill School of Public and Environmental Affairs, Indiana University.
 
 My research centers on the intersection of health and socioeconomic outcomes, with a focus on how public policies can improve social well-being. In particular, I study child health and development, and how early-life health shocks shape family dynamics—such as division of caregiving, fertility decisions, and parental well-being.
 
