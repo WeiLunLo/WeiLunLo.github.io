@@ -11,7 +11,9 @@ nav_order: 3
 
 <!-- Bibsearch Feature -->
 
-{% include bib_search.liquid %}
+<!-- {% include bib_search.liquid %} -->
+
+## Working Papers
 
 <div class="publications">
 
@@ -21,4 +23,4 @@ nav_order: 3
 
 ## Work in Progress
 
-- *Medicare State Coverage for GLP-1s on Weight Loss* — with Kosali Simon and Coady Wing
+- _Medicare State Coverage for GLP-1s on Weight Loss_ — with Kosali Simon and Coady Wing
