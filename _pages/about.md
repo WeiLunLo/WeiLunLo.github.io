@@ -32,4 +32,4 @@ I am an PhD student in Public Affairs at the O’Neill School of Public and Envi
 
 My research centers on the intersection of health and socioeconomic outcomes, with a focus on how public policies can improve social well-being. In particular, I study child health and development, and how early-life health shocks shape family dynamics—such as division of caregiving, fertility decisions, and parental well-being.
 
-Field: Health Economics and Policy, Family Economics, Applied Microeconomics
+Field: Health Economics and Policy, Public Economics, Applied Microeconomics
