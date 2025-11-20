@@ -23,4 +23,4 @@ nav_order: 3
 
 ## Work in Progress
 
-- _Medicare State Coverage for GLP-1s on Weight Loss_ — with Kosali Simon and Coady Wing
+- _Medicaid State Coverage and Spending on GLP-1s for Weight-Loss_ — with Kosali Simon and Coady Wing
