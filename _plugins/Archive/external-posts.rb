@@ -10,24 +10,21 @@ module ExternalPosts
     priority :high
 
     def generate(site)
-      return unless site.config['external_sources']
-
-      site.config['external_sources'].each do |src|
-        puts "Fetching external posts from #{src['name']}:"
-        if src['rss_url']
-          fetch_from_rss(site, src)
-        elsif src['posts']
-          fetch_from_urls(site, src)
+      if site.config['external_sources'] != nil
+        site.config['external_sources'].each do |src|
+          puts "Fetching external posts from #{src['name']}:"
+          if src['rss_url']
+            fetch_from_rss(site, src)
+          elsif src['posts']
+            fetch_from_urls(site, src)
+          end
         end
       end
     end
 
-    private
-
     def fetch_from_rss(site, src)
       xml = HTTParty.get(src['rss_url']).body
       return if xml.nil?
-
       feed = Feedjira.parse(xml)
       process_entries(site, src, feed.entries)
     end
@@ -42,6 +39,31 @@ module ExternalPosts
           published: e.published
         })
       end
+    end
+
+    def create_document(site, source_name, url, content)
+      # check if title is composed only of whitespace or foreign characters
+      if content[:title].gsub(/[^\w]/, '').strip.empty?
+        # use the source name and last url segment as fallback
+        slug = "#{source_name.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')}-#{url.split('/').last}"
+      else
+        # parse title from the post or use the source name and last url segment as fallback
+        slug = content[:title].downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
+        slug = "#{source_name.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')}-#{url.split('/').last}" if slug.empty?
+      end
+
+      path = site.in_source_dir("_posts/#{slug}.md")
+      doc = Jekyll::Document.new(
+        path, { :site => site, :collection => site.collections['posts'] }
+      )
+      doc.data['external_source'] = source_name
+      doc.data['title'] = content[:title]
+      doc.data['feed_content'] = content[:content]
+      doc.data['description'] = content[:summary]
+      doc.data['date'] = content[:published]
+      doc.data['redirect'] = url
+      doc.content = content[:content]
+      site.collections['posts'].docs << doc
     end
 
     def fetch_from_urls(site, src)
@@ -64,51 +86,25 @@ module ExternalPosts
       end
     end
 
-    def create_document(site, source_name, url, content)
-      # generate slug
-      slug = if content[:title].gsub(/[^\w]/, '').strip.empty?
-               "#{source_name.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')}-#{url.split('/').last}"
-             else
-               t = content[:title].downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
-               t.empty? ? "#{source_name.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')}-#{url.split('/').last}" : t
-             end
-
-      path = site.in_source_dir("_posts/#{slug}.md")
-      doc = Jekyll::Document.new(
-        path, { site: site, collection: site.collections['posts'] }
-      )
-      doc.data['external_source'] = source_name
-      doc.data['title'] = content[:title]
-      doc.data['feed_content'] = content[:content]
-      doc.data['description'] = content[:summary]
-      doc.data['date'] = content[:published]
-      doc.data['redirect'] = url
-      doc.content = content[:content]
-      site.collections['posts'].docs << doc
-    end
-
     def fetch_content_from_url(url)
       html = HTTParty.get(url).body
       parsed_html = Nokogiri::HTML(html)
 
-      # Title
-      title = parsed_html.at('head title')&.text&.strip || ''
-
-      # Description (meta tags)
+      title = parsed_html.at('head title')&.text.strip || ''
       description = parsed_html.at('head meta[name="description"]')&.attr('content')
       description ||= parsed_html.at('head meta[name="og:description"]')&.attr('content')
       description ||= parsed_html.at('head meta[property="og:description"]')&.attr('content')
 
-      # Body content: preserve HTML elements like p, h1-6, ul, ol, li, a, img
-      body_content_nodes = parsed_html.at('body')&.search('p, h1, h2, h3, h4, h5, h6, ul, ol, li, a, img')
-      body_content = body_content_nodes.map(&:to_s).join("\n") if body_content_nodes
-      body_content ||= ''
+      body_content = parsed_html.search('p').map { |e| e.text }
+      body_content = body_content.join() || ''
 
       {
         title: title,
         content: body_content,
         summary: description
+        # Note: The published date is now added in the fetch_from_urls method.
       }
     end
+
   end
 end
