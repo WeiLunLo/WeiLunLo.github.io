@@ -16,3 +16,7 @@ nav_order: 3
 <div class="publications">
   {% bibliography %}
 </div>
+
+## Work in Progress
+
+- *Medicare State Coverage for GLP-1s on Weight Loss* — with Kosali Simon and Coady Wing
