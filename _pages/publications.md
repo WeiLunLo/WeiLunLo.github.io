@@ -17,6 +17,14 @@ nav_order: 3
 
 <div class="publications">
 
+- <a href="https://www.nber.org/papers/w32842">**School Milestones Impact Child Mental Health in Taiwan**</a>
+with Kuan-Ming Chen, Janet Currie, and Hui Ding, Revise and Resubmit at The Economic Journal
+</div>
+
+## Publications
+
+<div class="publications">
+
 {% bibliography %}
 
 </div>
@@ -25,6 +33,7 @@ nav_order: 3
 
 <div class="publications">
 
-- _Medicaid Coverage of GLP-1s for Obesity: Utilization and Costs_ — with Kosali Simon and Coady Wing
+**Medicaid Coverage of GLP-1s for Obesity: Utilization and Costs**
+with Kosali Simon and Coady Wing
 
 </div>
