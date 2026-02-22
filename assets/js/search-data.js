@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-research",
           title: "Research",
-          description: "Here is a list of my research, organized in reverse chronological order. Click the buttons to view the abstract and access the link to each paper.",
+          description: "My research focuses on health economics, with an emphasis on child and family wellbeing.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
