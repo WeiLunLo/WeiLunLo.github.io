@@ -9,21 +9,20 @@ nav_order: 3
 
 ## Working Papers
 
-*New drafts coming soon.*
-
+- **[Medicaid Coverage for Obesity Medications: Utilization and Net-of-Rebate Spending](https://www.nber.org/papers/w34949)**  
+  with Coady Wing, Maddie Potter, Tarik Yuce, Alberto Ortega, John Cawley, Thuy Nguyen, and Kosali Simon [NBER](https://www.nber.org/papers/w34949)
 ## Work in Progress
 
-- **Medicaid Coverage of GLP-1 Obesity Drugs**  
-  with Coady Wing, Maddie Potter, John Cawley, Thuy Nguyen, and Kosali Simon
+*New drafts coming soon.*
 
 ## Publications
 
 - **[Impacts of Childhood Disability on Family: Labor, Marriage, Fertility, and Depression](https://dx.doi.org/10.2139/ssrn.4732491)**  
-  with Kuan-Ming Chen and Ming-Jen Lin  
+  with Kuan-Ming Chen and Ming-Jen Lin
   <!-- prettier-ignore -->
-  <span style="color: var(--global-theme-color); font-weight: bold;">● Forthcoming</span> — *Journal of Public Economics*
+  <span style="color: var(--global-theme-color); font-weight: bold;">● Forthcoming</span> — *Journal of Public Economics* [SSRN](https://dx.doi.org/10.2139/ssrn.4732491) 
 
 - **[School Milestones Impact Child Mental Health in Taiwan](https://www.nber.org/papers/w32842)**  
   with Kuan-Ming Chen, Janet Currie, and Hui Ding  
   <!-- prettier-ignore -->
-  <span style="color: var(--global-theme-color); font-weight: bold;">● Forthcoming</span> — *The Economic Journal*
+  <span style="color: var(--global-theme-color); font-weight: bold;">● Forthcoming</span> — *The Economic Journal* [NBER](https://www.nber.org/papers/w32842)
