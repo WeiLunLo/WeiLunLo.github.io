@@ -21,9 +21,9 @@ nav_order: 3
 - **[Impacts of Childhood Disability on Family: Labor, Marriage, Fertility, and Depression](https://dx.doi.org/10.2139/ssrn.4732491)**  
   with Kuan-Ming Chen and Ming-Jen Lin  
   <!-- prettier-ignore -->
-  Forthcoming</span> — *Journal of Public Economics* [[SSRN]](https://dx.doi.org/10.2139/ssrn.4732491) 
+  Forthcoming — *Journal of Public Economics* [[SSRN]](https://dx.doi.org/10.2139/ssrn.4732491) 
 
 - **[School Milestones Impact Child Mental Health in Taiwan](https://www.nber.org/papers/w32842)**  
   with Kuan-Ming Chen, Janet Currie, and Hui Ding  
   <!-- prettier-ignore -->
-  Forthcoming</span> — *The Economic Journal* [[NBER]](https://www.nber.org/papers/w32842)
+  2026 — *The Economic Journal* [[Journal]](https://doi.org/10.1093/ej/ueag084) [[NBER]](https://www.nber.org/papers/w32842)
