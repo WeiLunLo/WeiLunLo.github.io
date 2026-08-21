@@ -30,6 +30,6 @@ latest_posts:
 
 I am an PhD student in Public Affairs at the O’Neill School of Public and Environmental Affairs, Indiana University.
 
-I am a PhD student in Public Affairs at the O'Neill School of Public and Environmental Affairs, Indiana University. My research studies how early-life health shapes children's development and their families' long-run well-being, and how timely policy intervention can set children on healthier, more productive paths. My work has focused on how childhood disabilities and mental health affect family dynamics, and I am now expanding into healthcare delivery and insurance design.
+My research studies how early-life health shapes children's development and their families' long-run well-being, and how timely policy intervention can set children on healthier, more productive paths. My work has focused on how childhood disabilities and mental health affect family dynamics, and I am now expanding into healthcare delivery and insurance design.
 
 Field: Health Economics and Policy, Public Economics, Applied Microeconomics
